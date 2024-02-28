@@ -23,3 +23,6 @@
 
 - [Go 语言编程模式实战](https://time.geekbang.org/opencourse/intro/100069501?utm_campaign=geektime_search&utm_content=geektime_search&utm_medium=geektime_search&utm_source=geektime_search&utm_term=geektime_search)
 - [编程范式游记](https://time.geekbang.org/column/intro/100031901?utm_campaign=geektime_search&utm_content=geektime_search&utm_medium=geektime_search&utm_source=geektime_search&utm_term=geektime_search&tab=catalog)
+- [无锁队列的实现](https://coolshell.cn/articles/8239.html)
+- [无锁HASHMAP的原理与实现](https://coolshell.cn/articles/9703.html)
+- [你确定了解时间吗](https://coolshell.cn/articles/5075.html)
