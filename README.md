@@ -18,6 +18,8 @@
 | [2022-09-02-gits-database-internals-v-scalability](https://github.blog/2022-09-02-gits-database-internals-v-scalability/)  | `git` `database` | 2/20/2024 | 介绍一些分片方式, 根据时间纵向分片, 以及根据 worktree 横向分片, 比如: multi-repo, git submodule | 根据 worktree 切片的方法在公司搞 monorepo 时候已经摸透了, 文章里介绍的根据时间切片方式之前没想到过, 虽然会打断开发, 但也算是一种思路吧 |
 | [实现幂等的8种方案](https://blog.csdn.net/m0_71777195/article/details/128897222/)  | `git` `database` | 2/26/2024 | 介绍了实现幂等的方式: ID 生成, 悲观锁, 乐观锁, etc  | 通过防重 + 幂等 能实现 "at most once", 但是没有办法保证 "exactly once", 如果第一次执行请求, 执行到一半服务崩了, 重试的请求发现防重表里已经有了请求 ID, 就不执行了; 针对这种情况的处理方式文章没有讲到, 在我看来可以加分布式锁解决, (1) 检查防重表 (2) 如果没执行过就加锁 (3) 再检查防重表以防 step1 step2 之间有其他线程执行 (4) 执行业务逻辑 (5) 更新防重表, 当然这个分布式锁实现性能消耗比较大; 除了这个实现外还有一些其他思路, 比如类似 raft 的 leader 机制, 保证只有一个 leader 执行写, 通过 log 记录执行记录, 再将 log 复制给 follower, 及时 leader 奔溃, 新选举的 leader 根据 log 继续执行 |
 | [Go编程模式：修饰器](https://time.geekbang.org/column/article/330456?utm_campaign=geektime_search&utm_content=geektime_search&utm_medium=geektime_search&utm_source=geektime_search&utm_term=geektime_search)  | `go` | 2/28/2024 | 介绍了 go 装饰器玩法 |   |
+| [Go编程模式：切片、接口、时间和性能](https://time.geekbang.org/column/article/330178?utm_campaign=geektime_search&utm_content=geektime_search&utm_medium=geektime_search&utm_source=geektime_search&utm_term=geektime_search)  | `go` | 2/28/2024 | 切片、接口、时间和性能 | 了解了切片的一些底层机制, 文章中一些性能的 tips 也比较实用 |
+
 
 ## To read
 
