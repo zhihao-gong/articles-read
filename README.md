@@ -27,3 +27,4 @@
 - [无锁队列的实现](https://coolshell.cn/articles/8239.html)
 - [无锁HASHMAP的原理与实现](https://coolshell.cn/articles/9703.html)
 - [你确定了解时间吗](https://coolshell.cn/articles/5075.html)
+- [数据库内核杂谈](https://www.infoq.cn/article/0rSVq2VIfUE0YLedLe5o)
