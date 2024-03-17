@@ -25,8 +25,8 @@
 | [惰性求值 wiki](https://zh.wikipedia.org/zh-cn/%E6%83%B0%E6%80%A7%E6%B1%82%E5%80%BC)  | `functional programming` | 3/12/2024 | 惰性求值定义 |  |
 | [闭包 wiki](https://zh.wikipedia.org/zh-cn/%E9%97%AD%E5%8C%85_(%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6))  | `functional programming` | 3/17/2024 | 闭包定义 | 使用场景: 高阶函数, 装饰器, 柯里化, etc |
 | [用 js 实现柯里化](https://zhuanlan.zhihu.com/p/355859667)  | `functional programming` | 3/17/2024 | 柯里化在 js 语言里的实现 |  |
-| [mergesort 对比 quicksort](https://stackoverflow.com/questions/70402/why-is-quicksort-better-than-mergesort)  | `algorithm` | 3/17/2024 | mergesort vs quicksort, quicksort 的优势 | mergesort 是稳定排序(保留函数相对位置), 需要额外的空间存临时数组, quicksort 不需要额外的空间, 而且可以更好地利用 cpu 缓存(inplace 以及顺序遍历), 所以在很多编程语言默认的排序都是快速排序, 快速排序通过随机选 pivot, 一般也不会回退到 O(N^2) |
 | [排序算法复习](https://leetcode.cn/problems/sort-an-array/solutions/179489/fu-xi-ji-chu-pai-xu-suan-fa-java-by-liweiwei1419)  | `algorithm` | 3/17/2024 | 介绍了多种排序算法, 例如: 选择排序, 冒泡排序, 快速排序, 归并排序, 插入排序 | 平时开发过程中直接调用库, 很多排序算法的细节和取舍都忘了, 这次正好复习一下; 重点复习归并排序和快速排序, 选择排序在小范围数组内(或者接近有序)也比较不错, 其他几种了解即可 |
+| [mergesort 对比 quicksort](https://stackoverflow.com/questions/70402/why-is-quicksort-better-than-mergesort)  | `algorithm` | 3/17/2024 | mergesort vs quicksort, quicksort 的优势 | mergesort 是稳定排序(保留函数相对位置), 需要额外的空间存临时数组, quicksort 不需要额外的空间, 而且可以更好地利用 cpu 缓存(inplace 以及顺序遍历), 所以在很多编程语言默认的排序都是快速排序, 快速排序通过随机选 pivot, 一般也不会回退到 O(N^2) |
 
 ## To read
 
