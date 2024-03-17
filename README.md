@@ -23,6 +23,8 @@
 | [Core dump wiki](https://en.wikipedia.org/wiki/Core_dump)  | `os` | 3/8/2024 | 介绍了什么是 core dump | 复习一下 core dump 概念, 内存在 crash 时刻的 dump, 以及寄存器的状态, 但是没法识别变量和数据结构, 需要 symbol table 才能 debug |
 | [python 实现惰性求值](https://zhuanlan.zhihu.com/p/420508064)  | `functional programming` | 3/12/2024 | 介绍 python 实现 FP 里的惰性求值(python 原生并不支持惰性求值) |  |
 | [惰性求值 wiki](https://zh.wikipedia.org/zh-cn/%E6%83%B0%E6%80%A7%E6%B1%82%E5%80%BC)  | `functional programming` | 3/12/2024 | 惰性求值定义 |  |
+| [闭包 wiki](https://zh.wikipedia.org/zh-cn/%E9%97%AD%E5%8C%85_(%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6))  | `functional programming` | 3/17/2024 | 闭包定义 | 使用场景: 高阶函数, 装饰器, 柯里化, etc |
+| [用 js 实现柯里化](https://zhuanlan.zhihu.com/p/355859667)  | `functional programming` | 3/17/2024 | 柯里化在 js 语言里的实现 |  |
 
 ## To read
 
