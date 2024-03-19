@@ -33,5 +33,4 @@
 
 - [编程范式游记](https://time.geekbang.org/column/intro/100031901?utm_campaign=geektime_search&utm_content=geektime_search&utm_medium=geektime_search&utm_source=geektime_search&utm_term=geektime_search&tab=catalog)
 - [无锁队列的实现](https://coolshell.cn/articles/8239.html)
-- [无锁HASHMAP的原理与实现](https://coolshell.cn/articles/9703.html)
 - [数据库内核杂谈](https://www.infoq.cn/article/0rSVq2VIfUE0YLedLe5o)
