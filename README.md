@@ -28,6 +28,7 @@
 | [排序算法复习](https://leetcode.cn/problems/sort-an-array/solutions/179489/fu-xi-ji-chu-pai-xu-suan-fa-java-by-liweiwei1419)  | `algorithm` | 3/17/2024 | 介绍了多种排序算法, 例如: 选择排序, 冒泡排序, 快速排序, 归并排序, 插入排序 | 平时开发过程中直接调用库, 很多排序算法的细节和取舍都忘了, 这次正好复习一下; 重点复习归并排序和快速排序, 选择排序在小范围数组内(或者接近有序)也比较不错, 其他几种了解即可 |
 | [mergesort 对比 quicksort](https://stackoverflow.com/questions/70402/why-is-quicksort-better-than-mergesort)  | `algorithm` | 3/17/2024 | mergesort vs quicksort, quicksort 的优势 | mergesort 是稳定排序(保留函数相对位置), 需要额外的空间存临时数组, quicksort 不需要额外的空间, 而且可以更好地利用 cpu 缓存(inplace 以及顺序遍历), 所以在很多编程语言默认的排序都是快速排序, 快速排序通过随机选 pivot, 一般也不会回退到 O(N^2) |
 | [无锁 HASHMAP 的原理与实现](https://coolshell.cn/articles/9703.html)  | `algorithm` | 3/19/2024 | 介绍了无锁 hashmap 的实现思路, 以及细节, 包括插入, 删除, rehash | 无锁的 hashmap 的插入, 删除都是基于 CAS 实现, rehash 部分一些细节没有看地很懂, 大概是保证 rehash 前就维护一个链表保证节点之间有序, rehash 之后因为还是原来的顺序, 节点之间相对问题不变, 只要改哨兵节点就行了; 顺便复习了一下 java hashmap 的实现, (1) 对 key 算 hashcode 得到整形, (2) 对数组长度取 mod 得到索引 (3) 然后维护索引对应的链表; rehash 取决于冲突的 slot 是否超过负载因子(默认 0.75)和数组长度的乘机, 所以负载因为越大, 空间利用率约高, 因子约小, hash 冲突越少  |
+| [我做系统架构的一些原则](https://coolshell.cn/articles/21672.html)  | `architecture` | 3/19/2024 | 介绍了一些系统架构方面的原则  | 比较有感触的点有: "完备性会比性能更重要", "绝大多数情况下，如无非常特殊要求，选 Java基本是不会错的", "不要依赖自己的经验，要依赖于数据和学习", "制定并遵循服从标准、规范和最佳实践", "激进胜于保守，创新与实用并不冲突", etc  |
 
 ## To read
 
