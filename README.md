@@ -31,8 +31,7 @@
 | [我做系统架构的一些原则](https://coolshell.cn/articles/21672.html)  | `architecture` | 3/19/2024 | 介绍了一些系统架构方面的原则  | 比较有感触的点有: "完备性会比性能更重要", "绝大多数情况下，如无非常特殊要求，选 Java基本是不会错的", "不要依赖自己的经验，要依赖于数据和学习", "制定并遵循服从标准、规范和最佳实践", "激进胜于保守，创新与实用并不冲突", etc  |
 | [全文图解 Golang 调度器 GMP 原理与调度](https://zhuanlan.zhihu.com/p/288017699)  | `golang` | 3/21/2024 | 详细介绍了 GMP 模型, 以及给出了很多具体的调度场景  | 一些要点: Goroutine 较轻量, 大概只占几 KB; 调度模型原先有一个全局的任务队列, GMP 模型里每个 M 都有个本地 P 队列, 通过分片的思路减少竞争; goroutine 的最大切片是 10ms, 避免 starving |
 | [What is Load Average in Linux?](https://www.digitalocean.com/community/tutorials/load-average-in-linux#getting-familiar-with-the-load-average-in-linux)  | `operating systems` | 3/22/2024 | 介绍 sys load 这个概念, 以及可以通过 uptime | sys load 是过去一段区间内正在运行以及在 waitlist 上的进程数, 体现了当前系统的负载量以及排队情况; 相对地 cpu 负载是 cpu 视角, 体现 cpu 的使用率 |
-
-<!-- | [Python 内存管理](https://www.cnblogs.com/TMesh/p/11731010.html)  | `python` | 3/22/2024 |   |  | -->
+| [Python 内存管理](https://www.cnblogs.com/TMesh/p/11731010.html)  | `python` | 3/25/2024 | 垃圾回收, 分代回收, 引用技术, 小整数池, 内存池 |  |
 
 ## To read
 
