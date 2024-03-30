@@ -34,7 +34,7 @@
 | [Python 内存管理](https://www.cnblogs.com/TMesh/p/11731010.html)  | `python` | 3/25/2024 | 垃圾回收, 分代回收, 引用技术, 小整数池, 内存池 |  |
 | [编程范式游记](https://time.geekbang.org/column/intro/100031901?utm_campaign=geektime_search&utm_content=geektime_search&utm_medium=geektime_search&utm_source=geektime_search&utm_term=geektime_search&tab=catalog)  | `PL` | 3/26/2024 | 介绍了各种编程范式以及其演进, 从 C 开始介绍, 引申出 C++ 的泛型编程, 再到函数式编程, OOP, 原型编程, 算是 high level 地把编程范式理了一遍, 最后总结编程的本质: 逻辑和控制的解耦(其实就是业务和非业务解耦) | 类型式内存的抽象; 泛型, 高阶函数, 装饰器等特性都是为了抽象, 让代码更通用; 函数式编程优势: 没有状态就没有伤害, 结果确定, 容易做并行, 劣势: 复制严重 ; 函数式编程是声明式编程, 比如 map/reduce 而不是 for/while; 原型编程其实式用了委托的思想;  |
 | [AppImage introduction](https://docs.appimage.org/introduction/index.html)  | `packaging` | 3/29/2024 | 介绍了一种 linux 下的打包格式, 思路就是打一个 allinone 的包(包含 runtime lib)来解决依赖管理问题, 以及兼容性问题, 可以做到同一个 appImage 在不同发行版之间兼容 | 设计思路上类似静态编译, 但是一个是编译期, 一个是打包期 |
-| [c-plus-plus-11](https://www.thegeekstuff.com/2016/02/c-plus-plus-11/)  | `cpp` | 3/30/2024 | 介绍 cpp 11 的一些特性, 比如: 右值引用, 智能指针, override/final 等语法糖 |  |
+| [diagnostics](https://go.dev/doc/diagnostics)  | `go` | 3/30/2024 | 介绍 go 语言的 profiling, debug tools, tracing 工具 | go 所有调试的工具都集成在了标准库和 go 命令行里, 标准化做地不错 |
 
 ## To read
 
