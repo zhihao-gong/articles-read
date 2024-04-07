@@ -92,12 +92,22 @@ write ahead log 会在多个分片间同步, 同时也会间歇性地上传到 S
 3. 当有节点失联, 为了保证 quorm 机制有效, leader 增加一个 log replica 来记录日志, 算是一种降级措施
 4. 读操作提供最终一致性
 
+<img src="dynamoDB_put.png" alt="alt text" width="500"/>
+
 ### 故障检测
 
 1. leader 和 follower 之间通过 heartbeat 来检测
 2. 当 follow 检测不到 leader, 这时候会询问其他 follower 是否能检测到 leader, 通过这一次询问来避免一些 false-positive 的场景, 避免无谓的重复选举
 
-### 事务
+### Global Table
+
+Global Table 是一种多 master 的架构, 不同地域有不同的 master 都能处理读写, master 之间之间通过 last wins 来处理写冲突
+
+<img src="dynamoDB_mutiregion.png" alt="alt text" width="500"/>
+
+当某一个地域故障后, 会切换到其他地域的 master, 以此实现灾容
+
+## 事务
 
 DynamoDB 支持分布式事务, 底层通过二阶段提交来实现, 同时不影响非事务操作
 
