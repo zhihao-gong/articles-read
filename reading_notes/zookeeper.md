@@ -70,3 +70,7 @@ Read Lock
 6 goto 3
 
 ```
+
+## 参考
+
+- [ZooKeeper: Wait-free coordination for Internet-scale systems](https://pdos.csail.mit.edu/6.824/papers/zookeeper.pdf)
