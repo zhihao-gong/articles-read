@@ -110,7 +110,7 @@ Read Lock
 
 #### leader-only 对吞吐量的影响 
 
-<img src="zookeeper_read.png" alt="alt text" width="500"/>
+<img src="zookeeper_perf3.png" alt="alt text" width="500"/>
 
 如果所有读写请求都走 leader, 即便 server 增加, 吞吐量也没法很好地扩展
 
