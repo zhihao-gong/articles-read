@@ -36,6 +36,7 @@
 | [AppImage introduction](https://docs.appimage.org/introduction/index.html)  | `packaging` | 3/29/2024 | 介绍了一种 linux 下的打包格式, 思路就是打一个 allinone 的包(包含 runtime lib)来解决依赖管理问题, 以及兼容性问题, 可以做到同一个 appImage 在不同发行版之间兼容 | 设计思路上类似静态编译, 但是一个是编译期, 一个是打包期 |
 | [diagnostics](https://go.dev/doc/diagnostics)  | `go` | 3/302024 | 介绍 go 语言的 profiling, debug tools, tracing 工具 | 偏工手册类型的介绍, 用到时候翻翻; 其他感受: go 所有调试的工具都集成在了标准库和 go 命令行里, 标准化做地不错 |
 | [settings-sync](https://code.visualstudio.com/docs/editor/settings-sync)  | `vscode` | 4/7/2024 | 介绍 vscode 同步配置功能 | 一直以来都是 vscode 用户, 之前每次换开发机都是手动配置, 比较低效, 用了 settings sync 功能方便很多; 按照文档里的实际操作一遍, 在 vscode web 上同步本地上传的 settings, 有一些 extentions 因为不兼容 vscode web 没同步成功(比如: copilot), 所以 settings sync 也会受兼容性影响, 总体而言可用  |
+| [Go Channel 详解](https://colobu.com/2016/04/14/Golang-Channels/)  | `go` | 4/18/2024 | 介绍 go channel 的使用方式, 特性, 例如: send, receive, buffered channel, close,  timer, timeout 以及如何和 select 搭配使用 |   |
 
 ## To read
 
