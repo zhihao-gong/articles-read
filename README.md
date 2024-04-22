@@ -31,12 +31,13 @@
 | [我做系统架构的一些原则](https://coolshell.cn/articles/21672.html)  | `architecture` | 3/19/2024 | 介绍了一些系统架构方面的原则  | 比较有感触的点有: "完备性会比性能更重要", "绝大多数情况下，如无非常特殊要求，选 Java基本是不会错的", "不要依赖自己的经验，要依赖于数据和学习", "制定并遵循服从标准、规范和最佳实践", "激进胜于保守，创新与实用并不冲突", etc  |
 | [全文图解 Golang 调度器 GMP 原理与调度](https://zhuanlan.zhihu.com/p/288017699)  | `golang` | 3/21/2024 | 详细介绍了 GMP 模型, 以及给出了很多具体的调度场景  | 一些要点: Goroutine 较轻量, 大概只占几 KB; 调度模型原先有一个全局的任务队列, GMP 模型里每个 M 都有个本地 P 队列, 通过分片的思路减少竞争; goroutine 的最大切片是 10ms, 避免 starving |
 | [What is Load Average in Linux?](https://www.digitalocean.com/community/tutorials/load-average-in-linux#getting-familiar-with-the-load-average-in-linux)  | `operating systems` | 3/22/2024 | 介绍 sys load 这个概念, 以及可以通过 uptime | sys load 是过去一段区间内正在运行以及在 waitlist 上的进程数, 体现了当前系统的负载量以及排队情况; 相对地 cpu 负载是 cpu 视角, 体现 cpu 的使用率 |
-| [Python 内存管理](https://www.cnblogs.com/TMesh/p/11731010.html)  | `python` | 3/25/2024 | 垃圾回收, 分代回收, 引用技术, 小整数池, 内存池 |  |
+| [Python 内存管理](https://www.cnblogs.com/TMesh/p/11731010.html)  | `python` | 3/25/2024 | 垃圾回收, 分代回收, 引用计数, 小整数池, 内存池 |  |
 | [编程范式游记](https://time.geekbang.org/column/intro/100031901?utm_campaign=geektime_search&utm_content=geektime_search&utm_medium=geektime_search&utm_source=geektime_search&utm_term=geektime_search&tab=catalog)  | `PL` | 3/26/2024 | 介绍了各种编程范式以及其演进, 从 C 开始介绍, 引申出 C++ 的泛型编程, 再到函数式编程, OOP, 原型编程, 算是 high level 地把编程范式理了一遍, 最后总结编程的本质: 逻辑和控制的解耦(其实就是业务和非业务解耦) | 类型式内存的抽象; 泛型, 高阶函数, 装饰器等特性都是为了抽象, 让代码更通用; 函数式编程优势: 没有状态就没有伤害, 结果确定, 容易做并行, 劣势: 复制严重 ; 函数式编程是声明式编程, 比如 map/reduce 而不是 for/while; 原型编程其实式用了委托的思想;  |
 | [AppImage introduction](https://docs.appimage.org/introduction/index.html)  | `packaging` | 3/29/2024 | 介绍了一种 linux 下的打包格式, 思路就是打一个 allinone 的包(包含 runtime lib)来解决依赖管理问题, 以及兼容性问题, 可以做到同一个 appImage 在不同发行版之间兼容 | 设计思路上类似静态编译, 但是一个是编译期, 一个是打包期 |
 | [diagnostics](https://go.dev/doc/diagnostics)  | `go` | 3/302024 | 介绍 go 语言的 profiling, debug tools, tracing 工具 | 偏工手册类型的介绍, 用到时候翻翻; 其他感受: go 所有调试的工具都集成在了标准库和 go 命令行里, 标准化做地不错 |
 | [settings-sync](https://code.visualstudio.com/docs/editor/settings-sync)  | `vscode` | 4/7/2024 | 介绍 vscode 同步配置功能 | 一直以来都是 vscode 用户, 之前每次换开发机都是手动配置, 比较低效, 用了 settings sync 功能方便很多; 按照文档里的实际操作一遍, 在 vscode web 上同步本地上传的 settings, 有一些 extentions 因为不兼容 vscode web 没同步成功(比如: copilot), 所以 settings sync 也会受兼容性影响, 总体而言可用  |
 | [Go Channel 详解](https://colobu.com/2016/04/14/Golang-Channels/)  | `go` | 4/18/2024 | 介绍 go channel 的使用方式, 特性, 例如: send, receive, buffered channel, close,  timer, timeout 以及如何和 select 搭配使用 |   |
+| [fish tutorial](https://fishshell.com/docs/3.0/tutorial.html)  | `shell` | 4/22/2024 | 介绍 fish 相关特性, 覆盖比较权限 | 趁入职新公司的机会尝试 fish, fish 相比 bash 高亮, 填充等特性更好; 相比于 zsh, 更加开箱即用; 相比于 nushell 更加符合 posix 规范, 但是需要注意的是即便比 nushell 更加保守, 但 fish 也不是完全兼容 posix shell 语法 |
 
 ## To read
 
