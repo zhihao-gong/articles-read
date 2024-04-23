@@ -38,6 +38,7 @@
 | [settings-sync](https://code.visualstudio.com/docs/editor/settings-sync)  | `vscode` | 4/7/2024 | 介绍 vscode 同步配置功能 | 一直以来都是 vscode 用户, 之前每次换开发机都是手动配置, 比较低效, 用了 settings sync 功能方便很多; 按照文档里的实际操作一遍, 在 vscode web 上同步本地上传的 settings, 有一些 extentions 因为不兼容 vscode web 没同步成功(比如: copilot), 所以 settings sync 也会受兼容性影响, 总体而言可用  |
 | [Go Channel 详解](https://colobu.com/2016/04/14/Golang-Channels/)  | `go` | 4/18/2024 | 介绍 go channel 的使用方式, 特性, 例如: send, receive, buffered channel, close,  timer, timeout 以及如何和 select 搭配使用 |   |
 | [fish tutorial](https://fishshell.com/docs/3.0/tutorial.html)  | `shell` | 4/22/2024 | 介绍 fish 相关特性, 覆盖比较权限 | 趁入职新公司的机会尝试 fish, fish 相比 bash 高亮, 填充等特性更好; 相比于 zsh, 更加开箱即用; 相比于 nushell 更加符合 posix 规范, 但是需要注意的是即便比 nushell 更加保守, 但 fish 也不是完全兼容 posix shell 语法 |
+| [gitlab remote development](https://docs.gitlab.com/ee/user/project/remote_development/)  | `cloud ide` | 4/23/2024 | 介绍基于 gitlab 做云开发相关功能  | 读下来有一点困惑的是 gitlab 看上去是通过 https 连到环境里, 而不是 ssh, 目前其他主流的工具都是通过 ssh; 具体配置的时候通过在环境侧配置 cert/pem 以及 gitlab endpoint, 然后通过 web ide 连接 host:3443 端口建立连接; 这个流程里只有 https 完全没有 ssh, 这个让我对实现原理有一些困惑 |
 
 ## To read
 
