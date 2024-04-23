@@ -42,5 +42,5 @@
 
 ## To read
 
-- [数据库内核杂谈](https://www.infoq.cn/article/0rSVq2VIfUE0YLedLe5o)
+- [CCache 计算缓存原理](https://ccache.dev/manual/4.9.1.html#_how_ccache_works)
 - [Docker 容器网络详解](https://www.cnblogs.com/zuxing/articles/8780661.html)
