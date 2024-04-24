@@ -39,6 +39,8 @@
 | [Go Channel 详解](https://colobu.com/2016/04/14/Golang-Channels/)  | `go` | 4/18/2024 | 介绍 go channel 的使用方式, 特性, 例如: send, receive, buffered channel, close,  timer, timeout 以及如何和 select 搭配使用 |   |
 | [fish tutorial](https://fishshell.com/docs/3.0/tutorial.html)  | `shell` | 4/22/2024 | 介绍 fish 相关特性, 覆盖比较权限 | 趁入职新公司的机会尝试 fish, fish 相比 bash 高亮, 填充等特性更好; 相比于 zsh, 更加开箱即用; 相比于 nushell 更加符合 posix 规范, 但是需要注意的是即便比 nushell 更加保守, 但 fish 也不是完全兼容 posix shell 语法 |
 | [gitlab remote development](https://docs.gitlab.com/ee/user/project/remote_development/)  | `cloud ide` | 4/23/2024 | 介绍基于 gitlab 做云开发相关功能  | 读下来有一点困惑的是 gitlab 看上去是通过 https 连到环境里, 而不是 ssh, 目前其他主流的工具都是通过 ssh; 具体配置的时候通过在环境侧配置 cert/pem 以及 gitlab endpoint, 然后通过 web ide 连接 host:3443 端口建立连接; 这个流程里只有 https 完全没有 ssh, 这个让我对实现原理有一些困惑 |
+| [冒烟测试](https://www.cnblogs.com/amberdyy/p/8434714.html)  | `software testing` | 4/24/2024 | 介绍了冒烟测试的概念, Smoke Testing 在软件测试中的意义，应该说取的是其原始概念中的目的而非手段。通过 Smoke Testing，在软件代码正式编译并交付测试之前，先尽量消除其表面的错误，减少后期测试的负担。因此可以说，Smoke Testing 是预测试,  冒烟测试就是新版本送测后的测试，以决定是否要继续测试乃至发布。回归测试就是解决一个问题后的测试，方向是判断新的代码是否引入了新问题。冒烟测试一般用于每日构建(Nightly build)，构建服务器首先从CVS服务器上，下载最新的源代码，然后编译单元测试，运行单元测试通过后，编译可执行文件，可执行文件若可运行，并能执行最基本的功能，则认为通过了冒烟测试。而回归测试，是软件维护阶段对软件修改后进行的测试。两种测试用在软件生命的不同周期。| 收获: 什么是冒烟测试, 以及和回归测试的区别|
+
 
 ## To read
 
