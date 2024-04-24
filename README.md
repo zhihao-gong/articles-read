@@ -45,7 +45,8 @@
 
 ## To read
 
-- [CCache 计算缓存原理](https://ccache.dev/manual/4.9.1.html#_how_ccache_works)
+- [为什么你应该用 sccache](https://cloud.tencent.com/developer/article/2217552)
+- [sccache github](https://github.com/mozilla/sccache)
 - [Modern cmake](https://modern-cmake-cn.github.io/Modern-CMake-zh_CN)
 - [Gitpod 介绍](https://www.gitpod.io/)
 - [Docker 容器网络详解](https://www.cnblogs.com/zuxing/articles/8780661.html)
