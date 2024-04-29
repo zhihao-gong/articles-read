@@ -45,7 +45,8 @@
 | [一文掌握 Go 并发模式 Context 上下文](https://juejin.cn/post/7233981178101186619)  | `go` | 4/24/2024 | 介绍 go context 使用方式, 以及使用场景, 例如: 超时控制, 传递取消信号, 结束任务 | 读完的感受就是 go 对并发的支持是真好... |
 | [浅谈Linux Cgroups机制](https://zhuanlan.zhihu.com/p/81668069)  | `linux` | 4/27/2024 | 介绍 cgroup 各个子系统: cpu, cpuacct, cpuset, memory, blkio; 以及两个通过 cgroup 限制 cpu(cpu.cfs_period_us, cpu.cfs_quota_us), mem(memory.limit_in_bytes) 的操作示例 |  |
 | [cgroup cpu子系统的总结](https://blog.csdn.net/weixin_46040684/article/details/121855201)  | `linux` | 4/27/2024 | 给出通过修改 cpu.shares 控制 cpu 使用占比的操作示例 |  |
-
+| [incredibuild introduction](https://docs.incredibuild.com/lin/latest/linux/introduction.html?tocpath=Getting%20Started%7C_____1)  | `build system` | 4/29/2024 | incredibuild 介绍, incredibuild 无需代码修改, 通过一层 wrapper 触发分布式编译, 将构建分发到多台服务器上, 组成上分为 coordinator 以及 agent; 同时配有 monitor 作为 profiling  | 我个人对分布式编译的看法是收益越来越小了, 因为现在云上单机就能有几百个 cpu; 分布式编译主要还是适用于超大型项目, 比如: 整车集成, 单代码就有几百 G, 单机怎么都不够 |
+| [现在的编译器对CPU需求如何，在相同的CPU框架下是主频高编译的快还是核心多编译的快？](https://www.zhihu.com/question/306760258)  | `build system` | 4/29/2024 | 简单的公式, freq * core num, 具体还是取决于项目的并行度, 有 critical path 时候 freq 高有优势, 并行情况 core num 更重要 |
 
 ## To read
 
