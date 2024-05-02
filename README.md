@@ -51,6 +51,7 @@
 | [bazel vs cmake benchmarking](https://www.kai-wolf.me/blog/2021/04/16/bazel-cmake-performance-comparisons/)  | `build system` | 4/30/2024 | bazel 和 cmake 的效率对比, 给出了直观的可视化图表 | |
 | [Ninja 加速](https://zhuanlan.zhihu.com/p/634589665/)  | `build system` | 4/30/2024 | 简单介绍了 ninja 构建系统的原理, 如何通过 cmake 生成 ninja 配置文件, ninja 的并行实现原理, ninja 相比于 make 任务并行度更加高 | |
 | [详解子网技术](https://blog.csdn.net/baijaiyu/article/details/129023242)  | `linux` | 5/2/2024 | 介绍了IP地址的划分, 网络编号的规定, 主机编号的规定, 什么是子网技术, 为什么要划分子网, 子网掩码, 子网划分的方法  | 最近在学习容器网络技术, 需要很多网络相关的知识, 很多欠缺的都需要补充 |
+| [docker-and-the-pid-1-zombie-reaping-problem](https://blog.phusion.nl/2015/01/20/docker-and-the-pid-1-zombie-reaping-problem/)  | `docker` | 5/2/2024 | 介绍了 docker 僵尸进程问题, 没有被父进程 waitpid 的进程称为僵尸进程, 一般操作系统的 pid1 systemd 负责回收僵尸进程, 在 docker 内也是需要 pid1 进程回收僵尸进程, 如果没有那 docker 内的僵尸进程就会占用主机的 pid 资源, 可能会把 pid 表占满, 所以如果 docker 内如果是多进程应用, 需要有一个类似 tini 的轻量 init 程序负责收割僵尸进程, 此外 pid1 的程序也需要作为 signal handler, 当用户 ctrl-c 发送 signterm 之后, pid1 需要向容器内各个进程发送信号要求退出, 不然用户会发现 docker stop 卡在那, tini 也有 signal handler 的功能  | 之前面试时候有被问到过类似的问题, 当时还以为容器内的僵尸进程会被主机的 systemd 回收, 这次才真正把问题搞明白  |
 
 ## To read
 
