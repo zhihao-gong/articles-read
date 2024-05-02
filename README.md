@@ -50,6 +50,7 @@
 | [linux 的 tmpfs 和/dev/shm目录的详细介绍](https://zhuanlan.zhihu.com/p/650723391)  | `linux` | 4/30/2024 | 介绍 linux tmpfs 和 dev/shm, tmpfs 是利用内存作为 vfs 的技术, /dev/shm 就是一个 tmpfs  |
 | [bazel vs cmake benchmarking](https://www.kai-wolf.me/blog/2021/04/16/bazel-cmake-performance-comparisons/)  | `build system` | 4/30/2024 | bazel 和 cmake 的效率对比, 给出了直观的可视化图表 | |
 | [Ninja 加速](https://zhuanlan.zhihu.com/p/634589665/)  | `build system` | 4/30/2024 | 简单介绍了 ninja 构建系统的原理, 如何通过 cmake 生成 ninja 配置文件, ninja 的并行实现原理, ninja 相比于 make 任务并行度更加高 | |
+| [详解子网技术](https://blog.csdn.net/baijaiyu/article/details/129023242)  | `linux` | 5/2/2024 | 介绍了IP地址的划分, 网络编号的规定, 主机编号的规定, 什么是子网技术, 为什么要划分子网, 子网掩码, 子网划分的方法  | 最近在学习容器网络技术, 需要很多网络相关的知识, 很多欠缺的都需要补充 |
 
 ## To read
 
