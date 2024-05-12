@@ -57,6 +57,7 @@
 | [docker-init-zombies-why-does-it-matter](https://stackoverflow.com/questions/49162358/docker-init-zombies-why-does-it-matter)  | `docker` | 5/2/2024 | docker 目前原生支持 init 参数自动一个 tini 程序收割僵尸进程以及 signal handler, 来解决 `docker-and-the-pid-1-zombie-reaping-problem` 提到的问题 |   |
 | [why-does-c-compilation-take-so-long](https://stackoverflow.com/questions/318398/why-does-c-compilation-take-so-long)  | `docker` | 5/3/2024 | 1, 同一个 header 文件会被多个编译单元重复解析, 预处理, 同时造成大量 io; 2, link 没法并行; 3, parse 耗时; 4, C++ 编译器会做优化, 增加编译期耗时,  e.g. O2, O3; 5, template 被预处理本身就很复杂, 并且每个使用 template 的编译单元都需要处理一遍 template|   |
 | [GO 笔记之详解 GO 的编译执行流程](https://zhuanlan.zhihu.com/p/62922404)  | `go` | 5/11/2024 | go 语言构建过程, 可以通过 go build 加参数把详细的编译过程打印出来, 编译过程和 C++ 有类似, 但是少了预处理流程 |   |
+| [Go 语言编译优化](https://zhuanlan.zhihu.com/p/359910206)  | `go` | 5/11/2024 | upx 代壳压缩二进制能减少 60% - 70% 体积; 通过编译选项去除调试信息以及符号表, 能减少 20% 体积 |   |
 
 ## To read
 
