@@ -58,10 +58,14 @@
 | [why-does-c-compilation-take-so-long](https://stackoverflow.com/questions/318398/why-does-c-compilation-take-so-long)  | `docker` | 5/3/2024 | 1, 同一个 header 文件会被多个编译单元重复解析, 预处理, 同时造成大量 io; 2, link 没法并行; 3, parse 耗时; 4, C++ 编译器会做优化, 增加编译期耗时,  e.g. O2, O3; 5, template 被预处理本身就很复杂, 并且每个使用 template 的编译单元都需要处理一遍 template|   |
 | [GO 笔记之详解 GO 的编译执行流程](https://zhuanlan.zhihu.com/p/62922404)  | `go` | 5/11/2024 | go 语言构建过程, 可以通过 go build 加参数把详细的编译过程打印出来, 编译过程和 C++ 有类似, 但是少了预处理流程 |   |
 | [Go 语言编译优化](https://zhuanlan.zhihu.com/p/359910206)  | `go` | 5/11/2024 | upx 代壳压缩二进制能减少 60% - 70% 体积; 通过编译选项去除调试信息以及符号表, 能减少 20% 体积 |   |
+| [Go 的编译为什么快](https://blog.csdn.net/qq_34417408/article/details/109716015)  | `go` | 5/11/2024 | 文章把 go 和 C++ 编译做对比, 解释了为什么 go 编译比 C++ 快; 1, import 不需要重复编译, 而 include 需要, 2, go 语法简单, 编译器语义和语法解析更快, 3, 没有模板的负担(go 1.18 之后也支持泛型了) |   |
+| [golang 的编译速度真是震撼](https://zhuanlan.zhihu.com/p/20086295#!)  | `go` | 5/11/2024 | 直观对比了 C++ 和 go 的编译速度, 原来需要编译 10 - 20 mins 的项目, go 只需要 20s | |
+| [golang 微服务编译速度过慢？](https://zhuanlan.zhihu.com/p/667714896)  | `go` | 5/11/2024 | Go语言编译慢的原因和优化方法。主要内容包括: 通过设置 GOMODCACHE 环境变量, 可将依赖缓存到本地,避免重复下载。设置 GOCACHE 环境变量, 存放编译中间文件, 重用以提升编译速度。使用 gcflags 关闭优化(如函数内联), 可缩短编译时间, 但会影响运行时性能。配置网络代理, 提高依赖下载速度。挂载相关缓存目录到宿主机, 方便容器重建时复用 |   |
 
 ## To read
 
 - [为什么你应该用 sccache](https://cloud.tencent.com/developer/article/2217552)
+- [深入浅出：Go语言编译原理与过程解析](https://cloud.tencent.com/developer/article/2401918)
 - [sccache github](https://github.com/mozilla/sccache)
 - [Modern cmake](https://modern-cmake-cn.github.io/Modern-CMake-zh_CN)
 - [Gitpod 介绍](https://www.gitpod.io/)
