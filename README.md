@@ -63,6 +63,8 @@
 | [golang 微服务编译速度过慢？](https://zhuanlan.zhihu.com/p/667714896)  | `go` | 5/11/2024 | Go语言编译慢的原因和优化方法。主要内容包括: 通过设置 GOMODCACHE 环境变量, 可将依赖缓存到本地,避免重复下载。设置 GOCACHE 环境变量, 存放编译中间文件, 重用以提升编译速度。使用 gcflags 关闭优化(如函数内联), 可缩短编译时间, 但会影响运行时性能。配置网络代理, 提高依赖下载速度。挂载相关缓存目录到宿主机, 方便容器重建时复用 |   |
 | [go 是否支持增量构建？](https://tonybai.com/2022/03/21/go-native-support-incremental-build/)  | `go` | 5/13/2024 | go 是以 package 为编译单元做增量构建的, 不同的 package 构建出 .a, 当 package 中某个文件修改之后, 只会构建对应 package 的 .a, 以及下游 package, 如果是 go build main 的话需要重新做链接; 这篇文章通过示例演示增量构建 |   |
 | [go 编译提速优化？](https://blog.fishedee.com/2016/04/30/golang%E7%BC%96%E8%AF%91%E6%8F%90%E9%80%9F%E4%BC%98%E5%8C%96/#%E6%A6%82%E8%BF%B0)  | `go` | 5/13/2024 | 介绍通过 go install 实现增量构建(比较过时, 新版 go 中的 go build 已经实现了增量构建), 依赖以及 indirect 依赖的导出符号数量会影响链接速度, 可以通过减少依赖的导出符号减少链接时间  |   |
+| [cmake-with-subdirectories](https://stackoverflow.com/questions/42744315/cmake-with-subdirectories)  | `build system` | 5/18/2024 | 介绍了 cmake 的组织方式, 例如: 全局维护一个 cmakelist.txt vs 每个子目录维护一个 cmakelist.txt, 每个子目录维护一个 cmakelist.txt 然后通过 add_subdirectory 更加推荐一些, 避免冲突, 而且每个 cmakelist.txt 都有一个独立的变量域  |   |
+| [使用 pkg-config 让 C++ 工程编译配置更灵活](https://zhuanlan.zhihu.com/p/417285806)  | `build system` | 5/18/2024 | pkg-config 介绍  |   |
 
 ## To read
 
