@@ -65,6 +65,8 @@
 | [go 编译提速优化？](https://blog.fishedee.com/2016/04/30/golang%E7%BC%96%E8%AF%91%E6%8F%90%E9%80%9F%E4%BC%98%E5%8C%96/#%E6%A6%82%E8%BF%B0)  | `go` | 5/13/2024 | 介绍通过 go install 实现增量构建(比较过时, 新版 go 中的 go build 已经实现了增量构建), 依赖以及 indirect 依赖的导出符号数量会影响链接速度, 可以通过减少依赖的导出符号减少链接时间  |   |
 | [cmake-with-subdirectories](https://stackoverflow.com/questions/42744315/cmake-with-subdirectories)  | `build system` | 5/18/2024 | 介绍了 cmake 的组织方式, 例如: 全局维护一个 cmakelist.txt vs 每个子目录维护一个 cmakelist.txt, 每个子目录维护一个 cmakelist.txt 然后通过 add_subdirectory 更加推荐一些, 避免冲突, 而且每个 cmakelist.txt 都有一个独立的变量域  |   |
 | [使用 pkg-config 让 C++ 工程编译配置更灵活](https://zhuanlan.zhihu.com/p/417285806)  | `build system` | 5/18/2024 | pkg-config 介绍  |   |
+| [GNU Autotools 介绍](https://zhuanlan.zhihu.com/p/77904822)  | `build system` | 5/18/2024 |  |   |
+| [what-are-the-differences-between-autotools-cmake-and-scons](https://stackoverflow.com/questions/4071880/what-are-the-differences-between-autotools-cmake-and-scons)  | `build system` | 5/18/2024 |  |   |
 
 ## To read
 
