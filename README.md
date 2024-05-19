@@ -67,6 +67,7 @@
 | [使用 pkg-config 让 C++ 工程编译配置更灵活](https://zhuanlan.zhihu.com/p/417285806)  | `build system` | 5/18/2024 | pkg-config 介绍  |   |
 | [GNU Autotools 介绍](https://zhuanlan.zhihu.com/p/77904822)  | `build system` | 5/18/2024 |  |   |
 | [what-are-the-differences-between-autotools-cmake-and-scons](https://stackoverflow.com/questions/4071880/what-are-the-differences-between-autotools-cmake-and-scons)  | `build system` | 5/18/2024 |  |   |
+| [C 语言中的强符号与弱符号](https://blog.csdn.net/astrotycoon/article/details/8008629)  | `build system` | 5/18/2024 | 介绍了强弱符号的概念, 给出了示例演示各种场景 |   |
 
 ## To read
 
