@@ -70,6 +70,10 @@
 | [C 语言中的强符号与弱符号](https://blog.csdn.net/astrotycoon/article/details/8008629)  | `build system` | 5/18/2024 | 介绍了强弱符号的概念, 给出了示例演示各种场景, weak vs strong, week vs week, strong vs strong |   |
 | [epoll、poll、select 的原理和区别](https://blog.csdn.net/wwwvipp/article/details/119888373)  | `linux` | 5/18/2024 | epoll 条件触发, 红黑树注册回调, 事件驱动, 只遍历/拷贝有事件的 fd, 用户态内核态之间拷贝较少; select, poll 都是遍历拷贝所有 fd, 性能较差, select 受进程 fd 数量限制, poll 为链表结构不受 fd 限制 |   |
 | [Linux 异步 I/O 框架 io_uring：基本原理、程序示例与性能压测](https://arthurchiao.art/blog/intro-to-io-uring-zh/)  | `linux` | 5/26/2024 | 介绍了 linux 异步 io 的演进过程, 从 ad-hoc 的 aio 到 io_uring 的优劣, 以及使用, 并且深入分析 io_uring 的接口以及源码 |   |
+| [特殊的Header头 X-Forwarded-For 与 X-Real-IP 学习](https://blog.csdn.net/m0_47404181/article/details/107143156)  | `linux` | 5/26/2024 | 介绍 X-Forwarded-For, X-Real-IP 的概念和区别; 这两个都不是完全可信, 除非所有的 proxy 都是可信的, RemoteAddr 是可行的, 因为是 tcp 建立连接时候拿到的 |   |
+| [Difference between X-Forwarded-For and X-Real-IP headers](https://stackoverflow.com/questions/72557636/difference-between-x-forwarded-for-and-x-real-ip-headers)  | `linux` `go` | 5/26/2024 |  |   |
+| [Correct way of getting Client's IP Addresses from http.Request](https://stackoverflow.com/questions/27234861/correct-way-of-getting-clients-ip-addresses-from-http-request)  | `linux` | 5/26/2024 |  |   |
+
 
 ## To read
 
