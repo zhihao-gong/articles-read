@@ -67,7 +67,8 @@
 | [使用 pkg-config 让 C++ 工程编译配置更灵活](https://zhuanlan.zhihu.com/p/417285806)  | `build system` | 5/18/2024 | pkg-config 介绍  |   |
 | [GNU Autotools 介绍](https://zhuanlan.zhihu.com/p/77904822)  | `build system` | 5/18/2024 |  |   |
 | [what-are-the-differences-between-autotools-cmake-and-scons](https://stackoverflow.com/questions/4071880/what-are-the-differences-between-autotools-cmake-and-scons)  | `build system` | 5/18/2024 |  |   |
-| [C 语言中的强符号与弱符号](https://blog.csdn.net/astrotycoon/article/details/8008629)  | `build system` | 5/18/2024 | 介绍了强弱符号的概念, 给出了示例演示各种场景 |   |
+| [C 语言中的强符号与弱符号](https://blog.csdn.net/astrotycoon/article/details/8008629)  | `build system` | 5/18/2024 | 介绍了强弱符号的概念, 给出了示例演示各种场景, weak vs strong, week vs week, strong vs strong |   |
+| [epoll、poll、select 的原理和区别](https://blog.csdn.net/wwwvipp/article/details/119888373)  | `linux` | 5/18/2024 | epoll 条件触发, 红黑树注册回调, 事件驱动, 只遍历/拷贝有事件的 fd, 用户态内核态之间拷贝较少; select, poll 都是遍历拷贝所有 fd, 性能较差, select 受进程 fd 数量限制, poll 为链表结构不受 fd 限制 |   |
 
 ## To read
 
