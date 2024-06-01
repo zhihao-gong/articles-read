@@ -73,7 +73,8 @@
 | [特殊的Header头 X-Forwarded-For 与 X-Real-IP 学习](https://blog.csdn.net/m0_47404181/article/details/107143156)  | `linux` | 5/26/2024 | 介绍 X-Forwarded-For, X-Real-IP 的概念和区别; 这两个都不是完全可信, 除非所有的 proxy 都是可信的, RemoteAddr 是可行的, 因为是 tcp 建立连接时候拿到的 |   |
 | [Difference between X-Forwarded-For and X-Real-IP headers](https://stackoverflow.com/questions/72557636/difference-between-x-forwarded-for-and-x-real-ip-headers)  | `linux` `go` | 5/26/2024 |  |   |
 | [Correct way of getting Client's IP Addresses from http.Request](https://stackoverflow.com/questions/27234861/correct-way-of-getting-clients-ip-addresses-from-http-request)  | `linux` | 5/26/2024 |  |   |
-
+| [Kubernetes Deployment -Which tool?](https://faun.pub/kubernetes-deployment-which-tool-7e6eaca99dfa)  | `k8s` | 5/26/2024 | kubeadm vs kops vs kubespray 选型; kubeadm 是官方的事实标准, kubespray 基于 kubeadm 做了一套 ansible 分装, kops 更适合 gcp/aws 这种共有云 | 准备搭个 k8s 集群, 还是从官方的 kubeadm 上手吧  |
+| [Linux 内核 CFS 调度器](https://www.cnblogs.com/XiaoliBoy/p/10410686.html)  | `linux` | 6/1/2024 | 介绍 CFS 调度算法, 主要思想是维护为任务提供处理器时间方面的平衡, 介绍 vruntime 计算算法, 内核维护的红黑树数据结构, 以及从源码层面分析把数据结构, 调度流程做了一些简单的分析 | 复习一下基础知识, 也是 k8s 调度的底层知识   |
 
 ## To read
 
