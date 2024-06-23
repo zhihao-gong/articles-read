@@ -77,6 +77,7 @@
 | [Linux 内核 CFS 调度器](https://www.cnblogs.com/XiaoliBoy/p/10410686.html)  | `linux` | 6/1/2024 | 介绍 CFS 调度算法, 主要思想是维护为任务提供处理器时间方面的平衡, 介绍 vruntime 计算算法, 内核维护的红黑树数据结构, 以及从源码层面分析把数据结构, 调度流程做了一些简单的分析 | 复习一下基础知识, 也是 k8s 调度的底层知识   |
 | [iptable 详解](https://blog.csdn.net/luanpeng825485697/article/details/105600441/)  | `linux` | 6/17/2024 |    |
 | [iptable 命令使用介绍](https://blog.csdn.net/qq_44913712/article/details/132476635)  | `linux` | 6/17/2024 |  介绍 iptable 操作以及 SNAT 概念和使用场景  |
+| [mold-linker-1-0](https://www.infoq.com/news/2021/12/mold-linker-1-0/)  | `linux` | 6/23/2024 | mold 介绍, 效率远高于 ldd  |
 
 ## To read
 
