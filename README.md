@@ -80,7 +80,7 @@
 | [mold-linker-1-0](https://www.infoq.com/news/2021/12/mold-linker-1-0/)  | `linux` | 6/23/2024 | mold 介绍, 效率远高于 lld  | |
 | [LLD - The LLVM Linker](https://lld.llvm.org/)  | `linux` | 6/23/2024 | lld 介绍 | |
 | [Comparing lld 16.0 and mold 1.11.0](https://github.com/rui314/mold/issues/1020)  | `linux` | 6/23/2024 | mold 和 lld 12/16 的对比, 能看到 mold 相比 lld 12 有 30% 左右的性能优势, 相比 16 只有 15% 左右, 差距在减小 | |
-
+| [在 k8s 中部署 redis cluster 实战](https://www.cnblogs.com/xiexun/p/15061298.html/)  | `k8s` | 6/26/2024 | 介绍 emptydir, local volume, hostpath 概念; 介绍 retain, recycle 回收类型; 然后介绍将 redis cluster 通过 statefulset 部署, 每次都调度到同一块 local volume | |
 
 ## To read
 

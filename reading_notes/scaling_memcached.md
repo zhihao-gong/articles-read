@@ -44,6 +44,35 @@ Client 端限流没有 server 的负载情况很难全局性做出最佳限流�
 
 <img src="memcached_client_sliding_window.png" alt="alt text" width="500"/>
 
+## 低负载
+
+### lease
+
+lease 解决的场景:
+
+1. stale sets: 并发场景 set 请求顺序乱序, 造成 cache 不反应最新的值
+2. thundering herds: 并发读和写的场景, 通过 cache-aside 方式的写请求 invalidate cache 值, 造成大量读请求穿透
+
+对于问题 1, lease 起到了 mutex 的作用, 让一段时间内只允许固定 client 的 set 请求
+
+对于问题 2, lease 在固定时间内某个 key 只发一个 token, 没要到 token 的 client 过一段时间重试, 重试时候 read 请求大概率能读到值, 不至于 cache miss 去读 db
+
+### Memcache Pools
+
+对于不同类型的 key 放到不同的池, 例如对于不经常访问, 但是一旦 cache miss 成本高的 key 放到一个小池子
+对于经常访问, 但是 cache miss 成本低的 key 放到一个大池子, 通过这种分池的手段减少 cache miss
+
+### Replication within pool
+
+通过对一个 pool 做副本, 来分流单个节点的压力, 增加吞吐量
+
+## 容错
+
+维护小部分 gutter 机器, 当有 outstage 爆发时候, client 当尝试请求失败, 会把请求发到 gutter 机器, 这时候 cache miss 后
+把值更新到 gutter 机器
+
+这种方式区别于把 key rehash 到没受故障影响的机器, 那种方式可能因为 hot key 影响到其他机器, 造成级联故障
+
 ## 参考
 
 [Scaling Memcache at Facebook](https://pdos.csail.mit.edu/6.824/papers/memcache-fb.pdf)
